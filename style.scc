@@ -1,0 +1,65 @@
+body {
+  bacground-color: black;
+}
+
+/* buttons bottom postion*/
+/* all content warapper*/
+.warpper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  /*text and author and box*/
+  /*warpper close*/
+}
+.warpper #quote-box {
+  width: 35%;
+  padding: 10vw;
+  background-color: pink;
+  border-radius: 1vw;
+  text-align: center;
+  /**-------------------------------------------------------------------------------*/
+}
+.warpper #quote-box #text {
+  margin: 0 auto;
+  padding: 3vw;
+  background-color: white;
+  opacity: 0.4;
+  font-size: 1.5em;
+}
+.warpper #quote-box #author {
+  float: right;
+  color: #787878;
+}
+.warpper #quote-box .icon {
+  position: absolute;
+  bottom: 6vw;
+  display: inline-block;
+  left: 28vw;
+  float: left;
+}
+.warpper #quote-box .icon img {
+  color: transparent;
+  margin-right: 2vw;
+}
+.warpper #quote-box #new-quote {
+  position: absolute;
+  bottom: 6vw;
+  right: 25vw;
+  float: right;
+  padding: 1vw 2vw;
+  background-color: gray;
+  border: none;
+  border-radius: 0.2vw;
+}
+.warpper #quote-box #new-quote a {
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3em;
+  color: white;
+}
+
+/*body close*/
+
+/*# sourceMappingURL=style.scc.map */

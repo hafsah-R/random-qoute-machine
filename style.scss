@@ -1,0 +1,134 @@
+
+body{
+	
+	background: linear-gradient(80deg, white 65%, #FFFAFA 35%);
+
+}
+
+/* buttons bottom postion*/
+@mixin position{
+	
+   position:fixed;
+  
+}
+
+
+.warpper{
+	
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  height: 96vh;
+
+  
+ #quote-box{
+	 
+  position: relative;
+  width:45%;
+  padding:5.5vw;
+  border-left:.4vw outset gray;
+  border-bottom:.4vw solid gray;
+  border-radius:1vw;
+  text-align:center;
+
+
+  #text{
+	  
+    padding:3vw;
+    background-color:white;
+    opacity:.4;
+	font-size:1.5em;
+  }
+  
+  #author{
+	  
+	float:right;
+	color:#787878;
+  }
+   
+  /**-------------------------------------------------------------------------------*/
+  footer{
+	  
+	position: absolute;
+    bottom: 5vw;
+	
+	
+   .icon{
+	   
+	@include position;
+	display:inline-block;
+	left:28vw;
+	float:left;
+	  
+	   img{
+		   
+		    color:transparent;
+		  margin-right:2vw;
+	   }
+	   
+   }
+  
+  #new-quote{
+	  
+	@include position;
+	right:30vw;
+    float:right;
+	padding:1vw 2vw;
+    background-color:gray; 
+    border:none;
+	border-radius:.2vw;
+	
+       a{
+		   
+      text-decoration:none;
+	  font-family:"Times New Roman", Times, serif;
+	  font-size:1.3em;
+	  color:white;
+      }
+  }
+  
+  }
+}/*warpper close*/
+}/*body close*/
+
+@media only screen and (max-width: 600px) {
+	
+.warpper{
+	
+     font-size: .7em;
+  
+  #quote-box{
+	  
+     position: relative;
+      width:70%;
+      padding:5vw;
+      border-left:.9vw outset gray;
+      border-bottom:.9vw solid gray;
+	  
+  #author{
+	  
+      bottom:10vw;
+  }
+  
+  footer{
+	  
+    bottom: 9vw;
+	
+  .icon{ 
+  
+     width:30%;
+	 left:15vw;
+	   }
+	   
+  #new-quote{
+	  
+    right:15vw;
+	}
+	   
+  }
+  
+  }
+   
+  }/*warpper close*/
+}

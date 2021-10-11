@@ -1,0 +1,93 @@
+body {
+  background: linear-gradient(80deg, white 65%, #FFFAFA 35%);
+}
+
+/* buttons bottom postion*/
+.warpper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  height: 96vh;
+  /*warpper close*/
+}
+.warpper #quote-box {
+  position: relative;
+  width: 45%;
+  padding: 5.5vw;
+  border-left: 0.4vw outset gray;
+  border-bottom: 0.4vw solid gray;
+  border-radius: 1vw;
+  text-align: center;
+  /**-------------------------------------------------------------------------------*/
+}
+.warpper #quote-box #text {
+  padding: 3vw;
+  background-color: white;
+  opacity: 0.4;
+  font-size: 1.5em;
+}
+.warpper #quote-box #author {
+  float: right;
+  color: #787878;
+}
+.warpper #quote-box footer {
+  position: absolute;
+  bottom: 5vw;
+}
+.warpper #quote-box footer .icon {
+  position: fixed;
+  display: inline-block;
+  left: 28vw;
+  float: left;
+}
+.warpper #quote-box footer .icon img {
+  color: transparent;
+  margin-right: 2vw;
+}
+.warpper #quote-box footer #new-quote {
+  position: fixed;
+  right: 30vw;
+  float: right;
+  padding: 1vw 2vw;
+  background-color: gray;
+  border: none;
+  border-radius: 0.2vw;
+}
+.warpper #quote-box footer #new-quote a {
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3em;
+  color: white;
+}
+
+/*body close*/
+@media only screen and (max-width: 600px) {
+  .warpper {
+    font-size: 0.7em;
+  }
+  .warpper #quote-box {
+    position: relative;
+    width: 70%;
+    padding: 5vw;
+    border-left: 0.9vw outset gray;
+    border-bottom: 0.9vw solid gray;
+  }
+  .warpper #quote-box #author {
+    bottom: 10vw;
+  }
+  .warpper #quote-box footer {
+    bottom: 9vw;
+  }
+  .warpper #quote-box footer .icon {
+    width: 30%;
+    left: 15vw;
+  }
+  .warpper #quote-box footer #new-quote {
+    right: 15vw;
+  }
+
+  /*warpper close*/
+}
+
+/*# sourceMappingURL=style.css.map */
